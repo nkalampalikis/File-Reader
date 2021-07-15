@@ -1,10 +1,10 @@
-all: proj4
+all: FileReader
 
-proj4: proj4.o
-	gcc proj4.o -o proj4 -lpthread
+FileReader: FileReader.o
+	gcc FileReader.o -o FileReader -lpthread
 
-proj4.o: proj4.c
-	gcc -c proj4.c
+FileReader.o: FileReader.c
+	gcc -c FileReader.c
 
 clean: 
-	rm -f proj4.o proj4
+	rm -f FileReader.o FileReader
